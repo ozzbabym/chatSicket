@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/chatrooms/static/css/main.1753f1c6.chunk.css",
-    "main.js": "/chatrooms/static/js/main.92de1687.chunk.js",
-    "main.js.map": "/chatrooms/static/js/main.92de1687.chunk.js.map",
-    "runtime-main.js": "/chatrooms/static/js/runtime-main.b005f679.js",
-    "runtime-main.js.map": "/chatrooms/static/js/runtime-main.b005f679.js.map",
-    "static/js/2.d80904bd.chunk.js": "/chatrooms/static/js/2.d80904bd.chunk.js",
-    "static/js/2.d80904bd.chunk.js.map": "/chatrooms/static/js/2.d80904bd.chunk.js.map",
-    "index.html": "/chatrooms/index.html",
-    "static/css/main.1753f1c6.chunk.css.map": "/chatrooms/static/css/main.1753f1c6.chunk.css.map",
-    "static/js/2.d80904bd.chunk.js.LICENSE.txt": "/chatrooms/static/js/2.d80904bd.chunk.js.LICENSE.txt"
+    "main.css": "/chatSicket/static/css/main.1753f1c6.chunk.css",
+    "main.js": "/chatSicket/static/js/main.92de1687.chunk.js",
+    "main.js.map": "/chatSicket/static/js/main.92de1687.chunk.js.map",
+    "runtime-main.js": "/chatSicket/static/js/runtime-main.0d83ac15.js",
+    "runtime-main.js.map": "/chatSicket/static/js/runtime-main.0d83ac15.js.map",
+    "static/js/2.a7f5971c.chunk.js": "/chatSicket/static/js/2.a7f5971c.chunk.js",
+    "static/js/2.a7f5971c.chunk.js.map": "/chatSicket/static/js/2.a7f5971c.chunk.js.map",
+    "index.html": "/chatSicket/index.html",
+    "static/css/main.1753f1c6.chunk.css.map": "/chatSicket/static/css/main.1753f1c6.chunk.css.map",
+    "static/js/2.a7f5971c.chunk.js.LICENSE.txt": "/chatSicket/static/js/2.a7f5971c.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.b005f679.js",
-    "static/js/2.d80904bd.chunk.js",
+    "static/js/runtime-main.0d83ac15.js",
+    "static/js/2.a7f5971c.chunk.js",
     "static/css/main.1753f1c6.chunk.css",
     "static/js/main.92de1687.chunk.js"
   ]
