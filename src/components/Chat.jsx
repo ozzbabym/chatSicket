@@ -27,10 +27,12 @@ export default function Chat({users, messages, userName, roomId, onAddMessage}) 
     }, [messages])
 
     return (
-        <div className='container' style={{minWidth: '400px'}}>
+        <div className='container' style={{width: '100%', maxWidth: '1000px', minWidth: '300px', height: '80%'}}>
             <div className='containerChat'>
+
                 <div className='row' >
-                    <div className='col-4' style={{backgroundColor: '#F5F5F5', padding: '10px', overflow: 'hidden'}}>
+
+                    <div className='col-4' style={{backgroundColor: '#F5F5F5', padding: '10px', overflow: 'hidden', }}>
                         Комната: <b>{roomId}</b>
                         <hr/>
                         <h6><div className='badge bg-secondary'>Online({users.length}):</div></h6>
@@ -38,11 +40,12 @@ export default function Chat({users, messages, userName, roomId, onAddMessage}) 
                            {users.map((name, index)=><li key={index} style={{listStyle: 'none'}}><div className='badge bg-success'>{name}</div></li> ) }
                         </ul>
                     </div>
-                    <div className='col'>
+
+                    <div className='col-8'>
                         <div ref={messagesRef} className='row' style={{height:'600px', overflow: 'auto', margin: '5px'}}>
                             <div>
                                 {messages.map((messages, index) => 
-                                    <div key={index} className='messages' style={{maxWidth: '300px'}}>
+                                    <div key={index} className='messages' style={{width: '100%'}}>
                                         <div  style={{float: 'right', color: 'white', paddingRight: '10px'}}>
                                             <span>{messages.userName}</span>
                                         </div>
@@ -62,6 +65,7 @@ export default function Chat({users, messages, userName, roomId, onAddMessage}) 
                         </div>
                     </div>
                 </div>
+                
             </div>
         </div>
                                                             
