@@ -4,10 +4,7 @@ const cors = require('cors')
 // const userRoom = require('./files/schema/userRoom')
 
 const app = express()
-app.use(cors({
-    origin: 'https://chatroommess.herokuapp.com',
-    optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
-  }))
+app.use(cors())
 
 const server = require('http').Server(app)
 const io = require('socket.io')(server)

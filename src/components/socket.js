@@ -1,11 +1,6 @@
 import io from 'socket.io-client'
 
-const socket = io('wss://chatroommess.herokuapp.com/', {
-    withCredentials: true,
-    extraHeaders: {
-      "my-custom-header": "abcd"
-    }
-  })
+const socket = io('wss://chatroommess.herokuapp.com/')
 
 
 export default socket
