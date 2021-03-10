@@ -1,6 +1,6 @@
 import io from 'socket.io-client'
 
-const socket = io('wss://chatroommess.herokuapp.com/')
+const socket = io()
 
 
 export default socket
