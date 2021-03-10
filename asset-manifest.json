@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/chatSicket/static/css/main.1753f1c6.chunk.css",
-    "main.js": "/chatSicket/static/js/main.ac809c9b.chunk.js",
-    "main.js.map": "/chatSicket/static/js/main.ac809c9b.chunk.js.map",
+    "main.js": "/chatSicket/static/js/main.f9ce5b3c.chunk.js",
+    "main.js.map": "/chatSicket/static/js/main.f9ce5b3c.chunk.js.map",
     "runtime-main.js": "/chatSicket/static/js/runtime-main.0d83ac15.js",
     "runtime-main.js.map": "/chatSicket/static/js/runtime-main.0d83ac15.js.map",
     "static/js/2.a7f5971c.chunk.js": "/chatSicket/static/js/2.a7f5971c.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.0d83ac15.js",
     "static/js/2.a7f5971c.chunk.js",
     "static/css/main.1753f1c6.chunk.css",
-    "static/js/main.ac809c9b.chunk.js"
+    "static/js/main.f9ce5b3c.chunk.js"
   ]
 }
