@@ -10,7 +10,7 @@ let port = process.env.PORT || 9999
 app.use(function (req, res, next) {
 
     // Website you wish to allow to connect
-    res.setHeader('Access-Control-Allow-Origin', 'https://chatroommess.herokuapp.com');
+    res.setHeader('Access-Control-Allow-Origin', '*');
 
     // Request methods you wish to allow
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
@@ -25,12 +25,12 @@ app.use(function (req, res, next) {
     // Pass to next layer of middleware
     next();
 });
-app.use(cors({origin: 'https://chatroommess.herokuapp.com'}))
+app.use(cors())
 
 const server = require('http').Server(app)
 const io = require('socket.io')(server, {
     cors: {
-      origin: "https://chatroommess.herokuapp.com",
+      origin: "*",
       methods: ["GET", "POST"]
     }
   })
