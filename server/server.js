@@ -1,6 +1,6 @@
 const express = require('express')
 // const mongoose = require('mongoose')
-
+const cors = require('cors')
 // const userRoom = require('./files/schema/userRoom')
 
 const app = express()
@@ -17,7 +17,7 @@ const io = require('socket.io')(server)
 //=======================================
 
 app.use(express.json())
-// app.use(cors())
+app.use(cors())
 
 let port = process.env.PORT || 9999
 
