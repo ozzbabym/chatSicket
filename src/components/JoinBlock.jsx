@@ -17,7 +17,7 @@ function JoinBlock({onLogin}) {
             userName
         }
         setLoading(true)
-        await axios.post('/rooms', obj)
+        await axios.post('https://chatroommess.herokuapp.com/rooms', obj)
         onLogin(obj)
     }
 
