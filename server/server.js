@@ -1,30 +1,9 @@
 const express = require('express')
-// const mongoose = require('mongoose')
 const cors = require('cors')
-// const userRoom = require('./files/schema/userRoom')
-
 const app = express()
 
 let port = process.env.PORT || 9999
 
-app.use(function (req, res, next) {
-
-    // Website you wish to allow to connect
-    res.setHeader('Access-Control-Allow-Origin', '*');
-
-    // Request methods you wish to allow
-    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
-
-    // Request headers you wish to allow
-    res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
-
-    // Set to true if you need the website to include cookies in the requests sent
-    // to the API (e.g. in case you use sessions)
-    res.setHeader('Access-Control-Allow-Credentials', true);
-
-    // Pass to next layer of middleware
-    next();
-});
 app.use(cors())
 
 const server = require('http').Server(app)
@@ -35,19 +14,7 @@ const io = require('socket.io')(server, {
     }
   })
 
-//=======================================
-// mongoose.connect('mongodb+srv://Ozz:1234@cluster0.smou3.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',{
-//     useNewUrlParser: true,    
-//     useUnifiedTopology: true
-// }).then(() => console.log( 'Database Connected' )).catch(e=>console.error(e))
-
-
-//=======================================
-
 app.use(express.json())
-
-
-
 
 const rooms = new Map()
 
@@ -78,7 +45,6 @@ app.post('/rooms', (req, res) => {
     res.send()
 })
 
-
 io.on('connection', socket => {
     socket.on('ROOM:JOIN', ({roomId, userName})=> {
         socket.join(roomId)
@@ -89,7 +55,6 @@ io.on('connection', socket => {
 
     socket.on('ROOM:NEW_MESSAGE', ({roomId, userName, text})=> {
         const obj = {
-            
             userName,
             text
         }
@@ -97,8 +62,6 @@ io.on('connection', socket => {
         socket.to(roomId).emit('ROOM:NEW_MESSAGE', obj)
         
     })
-    
-    
     
     socket.on('disconnect', () =>{
         
@@ -114,8 +77,6 @@ io.on('connection', socket => {
         })
     })
 })
-
-
 
 server.listen(port, (err) => {
     if (err) throw Error(err)

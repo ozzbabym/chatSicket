@@ -18,8 +18,7 @@ export default function Chat({users, messages, userName, roomId, onAddMessage}) 
             text: messageValue
         })
         onAddMessage({userName, text: messageValue})
-        setMessageValue('')
-        
+        setMessageValue('') 
     }
     
     React.useEffect(() => { 
